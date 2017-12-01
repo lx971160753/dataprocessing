@@ -43,5 +43,5 @@ with tf.Session() as sess:
             "Iter " + str(step * batchsize) + ", Minibatch Loss= " + "{:.6f}".format(
                 loss) + ", Training Accuracy= " + "{:.5f}".format(acc))
         step += 1
-    saver.save(sess,"/home/lix/Desktop/dataprocessing/methodc/modelwithpadding1/resnet.ckpt")
+    saver.save(sess,save_dir)
     print("Optimization Finished!")
